@@ -72,7 +72,7 @@ a{
 
     .project{
       grid-column: 1 / -1;
-      width:100%;
+      width: 100%;
       height: 8vw;
       margin-left: -5rem;
       background-image: linear-gradient(to right, rgb(198, 153, 99), rgb(255, 211, 34)) ;
@@ -210,12 +210,38 @@ a{
       max-width: 100%;
       filter: brightness(70%); }
 
-.top-header{
-  font-size: 3.5rem;
-  color: black;
-  font-family: 'Sriracha', cursive;
-  margin-left: -4rem;
-}
+      .top-sidebar{
+        display: none;
+        font-size: 3.5rem;
+        color: black;
+        font-family: 'Sriracha', cursive;
+      }
+      @media only screen and (max-width: 50em) {
+        .sidebar{
+          justify-content: space-between;
+        }
+        .top-sidebar{
+          display: unset;
+          padding-left: 2rem;
+        }
+      }
+      
+
+    .top-header{
+      font-size: 3.5rem;
+      color: black;
+      font-family: 'Sriracha', cursive;
+      margin-left: -4rem;
+    }
+    @media only screen and (max-width: 50em) {
+      .top-header{
+        display: none;
+      }
+      .header .heading-1{
+        padding-top: 25rem;
+        padding-bottom: 2rem;
+      }
+    }
 
 .realtors {
   background-color: #101d2c;
@@ -251,12 +277,21 @@ a{
     }
     @media only screen and (max-width: 50em) {
       .realtors__list {
-        display: grid;
+        /* display: grid; */
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
-        grid-template-columns: repeat(3, min-content max-content); } }
+        /* grid-template-columns: repeat(3, min-content max-content);   */
+      }
+      .realtors__details{
+        padding: 1rem 2rem;
+      }
+    }
     @media only screen and (max-width: 37.5em) {
       .realtors__list {
-        grid-template-columns: min-content max-content; } }
+        /* grid-template-columns: min-content max-content;  */
+      }
+    }
   .realtors__img {
     width: 7rem;
     border-radius: 50%;
