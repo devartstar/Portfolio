@@ -499,10 +499,10 @@ a{
     grid-template-rows: 8rem min-content;
   }
   .heading-skills-primary{
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     width: 100%;
     height: 8vw;
-    margin-left: -6rem;
+    margin-left: 2rem;
     background-image: linear-gradient(to right, rgb(198, 153, 99), rgb(255, 211, 34)) ;
     clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100% );
     display: flex;
