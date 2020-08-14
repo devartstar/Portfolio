@@ -72,6 +72,7 @@ a{
 
     .project{
       grid-column: 1 / -1;
+      width:100%;
       height: 8vw;
       margin-left: -5rem;
       background-image: linear-gradient(to right, rgb(198, 153, 99), rgb(255, 211, 34)) ;
