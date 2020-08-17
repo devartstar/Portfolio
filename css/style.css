@@ -620,3 +620,10 @@ a{
       padding-bottom: 1rem;
     }
   }
+
+  .future_projects{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(75, 70, 70);
+  }
